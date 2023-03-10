@@ -15,10 +15,10 @@ import pickle
 
 
 
-infosys_model = pickle.load(open("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/saved_models/infosys_model.sav", 'rb'))
-reliance_model = pickle.load(open("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/saved_models/reliance_model.sav", 'rb'))
-tatamotors_model = pickle.load(open("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/saved_models/tatamotors_model.sav", 'rb'))
-wipro_model = pickle.load(open("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/saved_models/wipro_model.sav", 'rb'))
+infosys_model = pickle.load(open("saved_models/infosys_model.sav", 'rb'))
+reliance_model = pickle.load(open("saved_models/reliance_model.sav", 'rb'))
+tatamotors_model = pickle.load(open("saved_models/tatamotors_model.sav", 'rb'))
+wipro_model = pickle.load(open("saved_models/wipro_model.sav", 'rb'))
 
 model_dict = {'Infosys': infosys_model,
               'Reliance': reliance_model,
@@ -26,10 +26,10 @@ model_dict = {'Infosys': infosys_model,
               'Wipro': wipro_model}
 
 
-infosys_data = pd.read_csv("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/Data/infosys_data.csv")
-reliance_data = pd.read_csv("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/Data/reliance_data.csv")
-tatamotors_data = pd.read_csv("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/Data/tatamotors_data.csv")
-wipro_data = pd.read_csv("C:/Users/BHANUKIRAN/Desktop/Project_1_stock_market_forecasting/Data/wipro_data.csv")
+infosys_data = pd.read_csv("Data/infosys_data.csv")
+reliance_data = pd.read_csv("Data/reliance_data.csv")
+tatamotors_data = pd.read_csv("Data/tatamotors_data.csv")
+wipro_data = pd.read_csv("Data/wipro_data.csv")
 
 
 
